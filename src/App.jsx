@@ -114,8 +114,8 @@ function App() {
     <div className="site-shell">
       <div className="announcement">
         <div className="container announcement-inner">
-          <span><Sparkles size={16} /> ১৮+ | এটি 7XBET রেজিস্ট্রেশন প্রচারণা—ক্লিক করলে রেজিস্ট্রেশন পেজে যাবে</span>
-          <span className="announcement-right">শর্ত প্রযোজ্য · দায়িত্বশীলভাবে খেলুন</span>
+          <span><Sparkles size={16} /> </span>
+          <span className="announcement-right"> </span>
         </div>
       </div>
 
