@@ -18,6 +18,8 @@ import {
   X,
 } from 'lucide-react';
 
+const AFFILIATE_URL = 'https://7xbet.asia/register?aff=AFF90';
+
 const categories = [
   { name: 'মোবাইল ফোন', image: '/assets/phone.png' },
   { name: 'ম্যাকবুক', image: '/assets/macbook.png' },
@@ -46,6 +48,34 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [toast, setToast] = useState('');
   const [seconds, setSeconds] = useState(24 * 60 * 60 + 36 * 60 + 4);
+
+  useEffect(() => {
+    const redirectSelectors = [
+      'a',
+      'button',
+      '.category-card',
+      '.product-card',
+      '.feature-banner',
+      '.hero-visual',
+      '.filter-pill',
+      '.benefit-grid > div',
+    ].join(',');
+
+    const redirectToAffiliate = (event) => {
+      const element = event.target instanceof Element
+        ? event.target.closest(redirectSelectors)
+        : null;
+
+      if (!element) return;
+
+      event.preventDefault();
+      event.stopPropagation();
+      window.location.assign(AFFILIATE_URL);
+    };
+
+    document.addEventListener('click', redirectToAffiliate, true);
+    return () => document.removeEventListener('click', redirectToAffiliate, true);
+  }, []);
 
   useEffect(() => {
     const timer = window.setInterval(() => setSeconds((v) => (v > 0 ? v - 1 : 86399)), 1000);
@@ -84,8 +114,8 @@ function App() {
     <div className="site-shell">
       <div className="announcement">
         <div className="container announcement-inner">
-          <span><Sparkles size={16} /> আজকের বিশেষ অফার: নির্বাচিত পণ্যে ৫০% পর্যন্ত ছাড়</span>
-          <span className="announcement-right">নিরাপদ পেমেন্ট · দ্রুত ডেলিভারি · ২৪/৭ সহায়তা</span>
+          <span><Sparkles size={16} /> ১৮+ | এটি 7XBET রেজিস্ট্রেশন প্রচারণা—ক্লিক করলে রেজিস্ট্রেশন পেজে যাবে</span>
+          <span className="announcement-right">শর্ত প্রযোজ্য · দায়িত্বশীলভাবে খেলুন</span>
         </div>
       </div>
 
