@@ -154,7 +154,7 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><BadgeCheck size={17} /> ১০০% প্রিমিয়াম ও যাচাইকৃত পণ্য</div>
-              <h1> 7xbet.asia ৬ ঘন্টা পর পর একদব ফ্রিSpin এ ৫০ হাজার পর্যন্ত জেতার সুযোগ<em>সেরা Casino ওয়েবসাইট </em></h1>
+              <h1> 7xbet.asia ৬ ঘন্টা পর পর ফ্রি Spin এ ৫০হাজার টাকা পর্যন্ত জেতার সুযোগ<em>সেরা Casino ওয়েবসাইট </em></h1>
               <p> 7xbet.asia ১৫ হাজার টাকা পর্যন্ত বোনাস </p>
               <div className="hero-actions">
                 <a href="#products" className="btn btn-gold">এখনই রেজিস্ট্রেশন করুন<ArrowLeft size={19} /></a>
