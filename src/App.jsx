@@ -154,8 +154,8 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><BadgeCheck size={17} /> ১০০% প্রিমিয়াম ও যাচাইকৃত পণ্য</div>
-              <h1>  </em></h1>
-              <p>  </p>
+              <h1 aria-hidden="true" />
+              <p aria-hidden="true" />
               <div className="hero-actions">
                 <a href="#products" className="btn btn-gold"><ArrowLeft size={19} /></a>
                 <a href="#collections" className="btn btn-ghost">কালেকশন দেখুন <ArrowRight size={19} /></a>
