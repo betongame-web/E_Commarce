@@ -154,8 +154,6 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><BadgeCheck size={17} /> ১০০% প্রিমিয়াম ও যাচাইকৃত পণ্য</div>
-              <h1 aria-hidden="true" />
-              <p aria-hidden="true" />
               <div className="hero-actions">
                 <a href="#products" className="btn btn-gold"><ArrowLeft size={19} /></a>
                 <a href="#collections" className="btn btn-ghost">কালেকশন দেখুন <ArrowRight size={19} /></a>
@@ -186,7 +184,7 @@ function App() {
         <section className="category-section" id="collections">
           <div className="container">
             <div className="section-heading heading-row">
-              <div><span>প্রিমিয়াম বিভাগ</span><h2>www.7xbet.asia এখনি রেজিস্ট্রেশন করুন</h2></div>
+              <div aria-hidden="true" />
               <a href="#products">সব পণ্য দেখুন <ArrowLeft size={18} /></a>
             </div>
             <div className="category-grid">
