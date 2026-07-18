@@ -18,7 +18,7 @@ import {
   X,
 } from 'lucide-react';
 
-const AFFILIATE_URL = 'https://7xbet.asia/register?aff=AFF90';
+const AFFILIATE_URL = '';
 
 const categories = [
   { name: 'মোবাইল ফোন', image: '/assets/phone.png' },
