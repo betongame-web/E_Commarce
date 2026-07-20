@@ -21,6 +21,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 2147483647;
+  display: block;
   width: 100vw;
   height: 100vh;
   height: 100dvh;
@@ -28,6 +29,10 @@ body {
   padding: 0;
   overflow: hidden;
   background: #06131b;
+  cursor: pointer;
+  text-decoration: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .full-page-cover__image {
@@ -36,6 +41,8 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: top center;
+  pointer-events: none;
   user-select: none;
+  -webkit-user-select: none;
   -webkit-user-drag: none;
 }
