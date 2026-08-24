@@ -2,17 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta http-equiv="refresh" content="0; url=https://7xbet.asia/register?aff=AFF90" />
-  <title>Redirecting…</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="robots"
+    content="noindex,nofollow"
+  />
+
+  <title>Redirecting...</title>
+
+  <!-- Meta Pixel Code -->
   <script>
-    window.location.replace('https://7xbet.asia/register?aff=AFF90');
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq) return;
+
+      n = f.fbq = function() {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+
+      if(!f._fbq) f._fbq = n;
+
+      n.push = n;
+      n.loaded = true;
+      n.version = '2.0';
+      n.queue = [];
+
+      t = b.createElement(e);
+      t.async = true;
+      t.src = v;
+
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+
+    }(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
+
+    // Meta Pixel ID
+    fbq('init', '1051951807810331');
+
+    // Track landing-page visit
+    fbq('track', 'PageView');
   </script>
-</head>
-<body>
+  <!-- End Meta Pixel Code -->
+
+
+  <!--
+    JavaScript বন্ধ থাকলে
+    1 second পরে redirect হবে
+  -->
   <noscript>
-    <a href="https://7xbet.asia/register?aff=AFF90">Continue</a>
+    <meta
+      http-equiv="refresh"
+      content="1; url=https://7xbet.asia/register?aff=AFF90"
+    />
   </noscript>
+
+
+  <!-- Redirect after Pixel gets time to fire -->
+  <script>
+    setTimeout(function () {
+      window.location.replace(
+        'https://7xbet.asia/register?aff=AFF90'
+      );
+    }, 1000);
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Meta Pixel fallback for browsers without JavaScript -->
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=1051951807810331&ev=PageView&noscript=1"
+      alt=""
+    />
+  </noscript>
+
+
+  <!-- Fallback link -->
+  <p>
+    Redirecting...
+    <a href="https://7xbet.asia/register?aff=AFF90">
+      Continue
+    </a>
+  </p>
+
 </body>
 </html>
